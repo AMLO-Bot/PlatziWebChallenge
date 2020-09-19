@@ -11,25 +11,69 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+     rel="stylesheet">
+     <!-- MEDIA QUERIES -->
+     <link rel="stylesheet" media="(min-width: 800px)" href="./styles/tablet.css" />
+     <!-- MOBILE STYLES -->
+    <link rel="stylesheet" href="./styles/main.css">
+
 
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
 
-    <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+
+  <body class="bg" id="page-container">
+    <!-- DISPLAY ORDER
+        1.- <header>
+        2.- <figure>
+        3.- <section>
+        4.- div button
+        5.- social-media
+        </section>
+        </figure>
+        </header>-->
+    <!-- BACKGROUND -->
+    <!-- ZONA DEL HEADER -->
+    <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="Logo de Huddle">
+    </header>
+    <!-- ZONA DEL MAIN -->
+    <!-- <main> -->
+        <figure class="figure-mockup_container">
+          <img class="illustration-mockups" src="images/illustration-mockups.svg" alt="Imagen de Pantalla" >
+        </figure>
+<main class="left-side-main">
+
+
+        <section class="banner-container">
+          <h1 class="banner_title">Build The Community <br>Your Fans Will Love</h1>
+          <div class="text_container">
+            <p class="banner_text">Huddle re-imagines the way we build
+            communities. You have a voice, but so does your audience. Create connections
+            with your users as you engage in genuine discussion.
+            </p>
+          </div>
+        </section>
+        <div class="register_button">
+            <button type="button"
+             name="register_button"
+
+             value="Resgístrate">
+           <span class="button--hover">Regístrate</span></button>
+        </div>
+  </main>
+    <!-- </main> -->
+    <!-- ZONA DEL FOOTER -->
+    <footer class="sm-container">
+        <div class="social-media">
+          <img src="./images/logo-facebook.svg" alt="Facebook Icon">
+          <img src="./images/logo-instagram.svg" alt="Twitter Icon">
+          <img src="./images/logo-twitter.svg" alt="Instagram Icon">
+        </div>
+    </footer>
+  </div>
   </body>
 </html>
